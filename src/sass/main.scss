@@ -1,0 +1,33 @@
+$bace-font-size: 28px;
+
+@mixin ph {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $bace-font-size;
+    font-family: Arial;
+    line-height: 1.5;
+    background: url("../img/simulators2.jpg") no-repeat / cover;
+
+    @include ph {
+        color: #fff;
+        background-color: #000;
+
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        color: #fff;
+        background-color: #000;
+    }
+}
+
+@import "block/*.scss";
