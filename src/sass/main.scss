@@ -1,33 +1,25 @@
-$bace-font-size: 28px;
-
-@mixin ph {
-    @media (max-width: 700px) {
-        @content;
-    }
-}
-
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family:"Roboto", "Helvetica", "Verdana", "Roboto-Ruble", sans-serif !important;
+    src: url('../font/Roboto-Black.ttf');
+    src: url('../font/Roboto-BlackItalic.ttf') format('ttf'),
+    url('../font/Roboto-Bold.ttf') format('ttf'),
+    url('../font/Roboto-BoldItalic.ttf') format('ttf'),
+    url('../font/Roboto-Italic.ttf') format('ttf'),
+    url('../font/Roboto-Light.ttf') format('ttf'),
+    url('../font/Roboto-LightItalic.ttf') format('ttf'),
+    url('../font/Roboto-Medium.ttf') format('ttf'),
+    url('../font/Roboto-MediumItalic.ttf') format('ttf'),
+    url('../font/Roboto-Regular.ttf') format('ttf'),
+    url('../font/Roboto-Thin.ttf') format('ttf'),
+    url('../font/Roboto-ThinItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-size: $bace-font-size;
-    font-family: Arial;
-    line-height: 1.5;
-    background: url("../img/simulators2.jpg") no-repeat / cover;
-
-    @include ph {
-        color: #fff;
-        background-color: #000;
-
-    }
+    background-color: #000;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
 }
-
-@media (max-width: 700px) {
-    body {
-        color: #fff;
-        background-color: #000;
-    }
-}
-
-@import "block/*.scss";
