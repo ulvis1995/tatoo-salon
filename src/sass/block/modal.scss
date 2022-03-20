@@ -1,0 +1,127 @@
+.want-to-call {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+
+    width: 423px;
+    max-width: 100%;
+
+    z-index: 1010;
+
+    transition: 0.3s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.want-to-call-form, .want-to-call--logo {
+    padding: 30px;
+}
+
+.want-to-call-form {
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.want-to-call-data {
+    text-align: left;
+}
+
+.want-to-call-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.want-to-call-item input {
+    padding: 12px 25px 11px 15px;
+}
+
+.want-to-call-button {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    
+    &:hover, &:active {
+        text-decoration: none;
+        background-color: #d6d6d6;
+        border: 1px solid #d6d6d6;
+      }
+}
+.button-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1;
+}
+
+.button-content p {
+    margin: 0 auto;
+    padding: 5px;
+    color: #000;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 35px;
+    height: 3px;
+
+    background-color: #d0d0d0;    
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9;
+    transition: 0.3s all;
+}
+
+.want-to-call.active,
+.modal-overlay.active {
+   opacity: 1;
+   visibility: visible;
+}
+
+@media (min-width: $tablet-width) {
+    .want-to-call {
+        display: flex;
+        height: 400px;
+        width: auto;
+    }
+
+
+}

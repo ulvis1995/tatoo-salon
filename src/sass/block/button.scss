@@ -1,0 +1,33 @@
+.button {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+  
+    background-color: transparent;
+    border: 1px solid #00c4fa;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 5px 10px;
+  
+    &:hover, &:active {
+      background-color: #00c4fa;
+    }
+  }
+
+  .button a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #00c4fa;
+
+    &:hover, &:active {
+      text-decoration: none;
+      color: #fff;
+    }
+  }

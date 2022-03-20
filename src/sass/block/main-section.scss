@@ -1,0 +1,155 @@
+.advantages {
+    font-size: 20px;
+    line-height: 1;
+    font-style: oblique;
+    border: 7px solid #fff;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    background-image: url('/../img/metal-background-62287.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages-question-item {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.ourworks-header, .ourworks-text {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.ourworks-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px;
+}
+
+.ourworks-photo-item {
+    padding: 0 5px;
+    list-style: none;
+    font-size: 0;
+    list-style: 0;
+}
+
+.order {
+    text-shadow: 2px 2px 3px #000;
+    background-image: url('/../img/metal-background-62287.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.order-list, .people-about-us {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 40px;
+    line-height: 1;
+}
+
+.people-about-us h2, .people-about-us-p {
+    text-align: center;
+}
+
+.people-about-us-item {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.people-about-us-person {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.people-about-us-image {
+    padding: 0 10px;
+}
+
+.people-about-us-person--circle {
+    border-radius: 50%;
+}
+
+.people-about-us-text {
+    letter-spacing: 1px;
+}
+
+.people-about-us-name {
+    font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: $tablet-width;
+        margin: 0 auto;
+    }
+    .advantages {
+        flex-direction: row;
+        align-items: stretch;
+        padding: 0 10px;
+        font-size: 15px;
+        text-align: left;
+        border: none;
+        margin-left: 40px;
+        background-image: none;
+    }
+
+    .advantages-question-text {
+        width: 400px;
+        font-family: "Playfair Display", "Helvetica", "Verdana", "Roboto-Ruble", sans-serif;
+        font-style: normal;
+        font-size: x-large;
+        margin: 0 auto;
+        border-left: 4px solid #fff;
+        padding: 8px 0 8px 8px;
+    }
+
+    .advantages-question-item {
+        font-family: "Roboto", "Helvetica", "Verdana", "Roboto-Ruble", sans-serif;
+        font-style: normal;
+        padding: 5px 0;
+    }
+
+    .advantages-question-item li::before {
+        content:  "-";
+        position: relative;
+        left:     -5px;
+    }
+
+    .ourworks, .order {
+        margin: 0 auto;
+        width: $tablet-width;
+    }
+
+    .people-about-us-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .people-about-us-item {
+        width: 450px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    main {
+        width: $desktop-width;
+    }
+
+    .advantages {
+        margin-left: 0;
+    }
+
+}

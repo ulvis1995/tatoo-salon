@@ -1,0 +1,79 @@
+.adress {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.adress-information {
+    order: 1;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #000;
+}
+
+.adress-information-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.adress-information-info p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.map {
+    order: 2;
+}
+
+.map iframe {
+    width: 100vw;
+    height: 350px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu, .social-contacts-footer {
+    padding: 17px 0;
+}
+
+.footer-nav-list {
+    justify-content: center;
+}
+
+.footer-nav-item {
+    padding: 7px 15px;
+}
+
+.social-contacts-item {
+    padding: 7px;
+}
+
+.footer-nav-text {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+    .map {
+        order: 0;
+        z-index: 10;
+    }
+
+    .map iframe {
+        width: 100vw;
+        height: 552px;
+    }
+
+    .adress-information {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        order: 0;
+        z-index: 20;
+    }
+}
